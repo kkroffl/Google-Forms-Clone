@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzFvn9dcQjplFiT4nDG9EJtmD_ze2Pc5J4PKEucE13gKOZEg3u7sAGiiMYU-SLF_CEO/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz7nXCMoklmwiZleTJvGPIx9iATLG6a7CDW5An1FX3MOGAb6KNiGyo-nqpDc8W95CJd/exec';
 const form = document.getElementById('certForm');
 const status = document.getElementById('status');
 
@@ -43,3 +43,4 @@ form.addEventListener('submit', e => {
 
   reader.readAsDataURL(file);
 });
+
