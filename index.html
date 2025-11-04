@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWC Staff Certification Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-4">
+
+        <div class="container bg-dark-subtle rounded">
+            <h1 class="mb-2">NWC Staff Certification Courses Completed</h2>
+                <hr class="border-4 rounded text-primary">
+                <p>Dear Colleague, Kindly fill the Staff Upskilling certifications obtained for industries and other
+                    sources.</p>
+        </div>
+
+        <form id="certForm" class="card p-4 shadow">
+            <div class="mb-3">
+                <label>Name</label>
+                <span class="text-danger">*</span>
+                <input type="text" placeholder="Short answer text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label>Employee ID</label>
+                <span class="text-danger">*</span>
+                <input type="text" placeholder="Short answer text" class="form-control" id="employeeId" required>
+            </div>
+            <div class="mb-3">
+                <label>Email</label>
+                <span class="text-danger">*</span>
+                <input type="email" placeholder="Short answer text" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label>Mobile Number</label>
+                <span class="text-danger">*</span>
+                <input type="text" placeholder="Short answer text" class="form-control" id="mobile" required>
+            </div>
+            <div class="mb-3">
+                <label>Name of Certification Course</label>
+                <span class="text-danger">*</span>
+                <input type="text" placeholder="Short answer text" class="form-control" id="courseName" required>
+            </div>
+            <div class="mb-3">
+                <label>Conducted By</label>
+                <br>
+                <label>(Example : CISCO, ORACLE, Microsoft, NPTEL, Coursera ...)</label>
+                <input type="text" placeholder="Short answer text" class="form-control" id="conductedBy" required>
+            </div>
+            <div class="mb-3">
+                <label>Duration (weeks)</label>
+                <span class="text-danger">*</span>
+                <input type="number" placeholder="Short answer text" class="form-control" id="duration" required>
+            </div>
+            <div class="mb-3">
+                <label>Academic Year</label>
+                <span class="text-danger">*</span>
+                <select class="form-select" id="academicYear" required>
+                    <option>2025-2026</option>
+                    <option>2024-2025</option>
+                    <option>2023-2024</option>
+                    <option>2022-2023</option>
+                    <option>2021-2022</option>
+                    <option>2020-2021</option>
+                    <option>2019-2020</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label>Start Date</label>
+                <span class="text-danger">*</span>
+                <input type="date" class="form-control" id="startDate" required>
+            </div>
+            <div class="mb-3">
+                <label>End Date</label>
+                <span class="text-danger">*</span>
+                <input type="date" class="form-control" id="endDate" required>
+            </div>
+            <div class="mb-3">
+                <label>Upload Certificate <span class="text-danger">*</span></label>
+                <input type="file" class="form-control" id="certificateFile" required>
+            </div>
+            <div class="mb-3">
+                <label>Fee Amount (if any)</label>
+                <input type="text" placeholder="Short answer text" class="form-control" id="feeAmount">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+
+        <p id="status" class="text-center mt-3"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
